@@ -1,0 +1,16 @@
+# Demonstrates analyzer plugin hosted source bug
+# The plugin manager should resolve example_plugin from the hosted URL,
+# but instead attempts to resolve from https://pub.dev
+
+plugins:
+  custom_lint_package: 
+    hosted: https://custom_lint_plugin.com/pub
+    version: ^1.0.0
+
+analyzer:
+  exclude:
+    - build/**
+
+linter:
+  rules:
+    - prefer_const_constructors

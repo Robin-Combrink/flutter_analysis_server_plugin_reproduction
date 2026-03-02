@@ -1,0 +1,8 @@
+name: analyzer_plugin_hosted_bug_repro
+description: Minimal reproduction case for analyzer plugin hosted source bug
+version: 1.0.0
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dependencies:
+  # No actual dependencies needed for this repro
